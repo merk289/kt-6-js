@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CosmoGames — Контакты</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+<header>
+    <div class="logo">CosmoGames</div>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="games.html">Игры</a>
+        <a href="contact.html" class="active">Контакты</a>
+    </nav>
+</header>
+<main>
+    <div class="contact-wrap">
+        <h2>Свяжись с нами</h2>
+        <p class="subtitle">Двигай мышкой — фон реагирует. Ctrl+Enter — быстрая отправка.</p>
+
+        <form id="contactForm" novalidate>
+            <div class="field">
+                <label for="name">Имя</label>
+                <input type="text" id="name" placeholder="Как тебя зовут?">
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="you@example.com">
+            </div>
+            <div class="field">
+                <label for="message">Сообщение</label>
+                <textarea id="message" placeholder="Что хочешь нам сказать?"></textarea>
+            </div>
+            <button type="submit">Отправить</button>
+            <div id="formMsg" class="form-msg"></div>
+        </form>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
